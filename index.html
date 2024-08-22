@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="assets/img/53264.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="navbar-container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-medium" href="#">
+            <img
+              src="assets/img/53264.png"
+              alt="Bootstrap"
+              width="50"
+              height="45"
+            />IT'S MATCH DAY!</a
+          >
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <!-- main section -->
+    <div class="main-container text-center text-white">
+      <div class="main-image pt-5 px-4">
+        <div class="overlay">
+          <h1 class="mt-5">MATCH LIVE <i class="fa-solid fa-record-vinyl fs-5"></i></h1>
+          <div id="container">
+            <div class="row p-4 m-3">
+              <div
+                class="col-6 d-flex align-items-center mt-5 justify-content-end"
+              >
+                <div class="team" id="teamA">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="scorecontrols">
+                        <button onclick="increaseScore('A')" class="goalbtn">
+                          <span>GOAL</span>
+                        </button>
+                        <button onclick="decreaseScore('A')" class="cancelbtn">
+                          <span>CANCEL</span>
+                        </button>
+                      </div>
+                      <button onclick="teamsCurrentGoal('A')" class="buttons">
+                        SET GOAL
+                      </button>
+                      <button onclick="setName('A')" class="buttons">
+                        TEAM NAME!
+                      </button>
+                      <button id="resetbtnA" class="buttons">RESET</button>
+                    </div>
+                    <div class="col-5">
+                      <h2 id="nameA" class="fs-2">TeamA</h2>
+                    </div>
+                    <div class="col-2">
+                      <p id="scoreA" class="fs-2 fw-bold">0</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-6 d-flex align-items-center mt-5 justify-content-start"
+              >
+                <div class="team" id="teamB">
+                  <div class="row">
+                    <div class="col-2">
+                      <p id="scoreB" class="fs-2 fw-bold">0</p>
+                    </div>
+                    <div class="col-5">
+                      <h2 id="nameB" class="fs-2">TeamB</h2>
+                    </div>
+                    <div class="col-5">
+                      <div class="scorecontrols">
+                        <button onclick="increaseScore('B')" class="goalbtn">
+                          <span>GOAL</span>
+                        </button>
+                        <button onclick="decreaseScore('B')" class="cancelbtn">
+                          <span>CANCEL</span>
+                        </button>
+                      </div>
+                      <button onclick="teamsCurrentGoal('B')" class="buttons">
+                        SET GOAL
+                      </button>
+                      <button onclick="setName('B')" class="buttons">
+                        TEAM NAME!
+                      </button>
+                      <button id="resetbtnB" class="buttons">RESET</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

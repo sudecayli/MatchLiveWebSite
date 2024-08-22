@@ -1,0 +1,247 @@
+ * {
+overflow: hidden;
+box-sizing: border-box !important;
+  } 
+
+  @media (max-width:992px) {
+    .goalbtn {
+            font-size: 70% !important;
+             margin: 3px !important; 
+             width: 110px !important;
+             height: 52px !important;
+          }
+     .cancelbtn{
+         font-size: 70% !important;
+         margin: 3px !important; 
+         width: 110px !important;
+         height: 52px !important;
+     }
+     .buttons{
+        font-size: 70% !important;
+         margin: 3px !important;
+         width: 110px !important;
+         height: 52px !important;
+     }
+     h2{
+        font-size: 10px !important;
+     }
+     
+      }
+
+
+  @media (min-width:576px) and (max-width:768px )
+  {
+    .goalbtn {
+            font-size: 70% !important;
+             margin: 3px !important; 
+             width: 85px !important;
+             height: 50px !important;
+          }
+     .cancelbtn{
+         font-size: 70% !important;
+         margin: 3px !important; 
+         width: 85px !important;
+         height: 50px !important;
+     }
+     .buttons{
+        font-size: 70% !important;
+         margin: 3px !important;
+         width: 85px !important;
+         height: 50px !important;
+     }
+     #nameA{
+        font-size: 20px !important;
+     }
+     #nameB{
+        font-size: 20px !important;
+     }
+     
+      } 
+      @media (min-width:200px) and (max-width:576px )
+      {
+        .goalbtn {
+                font-size: 70% !important;
+                 margin: 2px !important; 
+                 width: 50px !important;
+                 height: 50px !important;
+
+              }
+         .cancelbtn{
+             font-size: 70% !important;
+             margin: 2px !important; 
+             width: 50px !important;
+             height: 50px !important;
+         }
+         .buttons{
+            font-size: 60% !important;
+             margin: 2px !important;
+             width: 50px !important;
+             height: 40px !important;
+         }
+         #nameA{
+            font-size: 15px !important;
+         }
+         #nameB{
+            font-size: 15px !important;
+         }
+         #scoreB{
+            font-size: 22px !important;
+         }
+         #scoreA{
+            font-size: 22px !important;
+         }
+          } 
+    
+
+      
+ 
+
+    
+
+.navbar-container{
+    background-color: #FFCC00;
+}
+.main-image {
+    
+    background-size: cover;
+    position: relative; 
+    display: block;
+    background-image: url("assets/img/pngtree-soccer-field-in-a-3d-rendered-stadium-image_3633766.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+.goalbtn {
+    border-radius: 4px;
+    background-color: #FFCC00;
+    border: none;
+    color: #0c0909;
+    text-align: center;
+    font-size: 95%;
+    padding: 10%;
+    width: 150px;
+    height: 65px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+  }
+  
+  .goalbtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .goalbtn span:after {
+    content: '⚽️';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -70px;
+    transition: 0.5s;
+  }
+  
+  .goalbtn:hover span {
+    padding-right: 35px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .goalbtn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+ 
+
+  .cancelbtn {
+    border-radius: 4px;
+    background-color: #FFCC00;
+    border: none;
+    color: #0c0909;
+    text-align: center;
+    font-size: 95%;
+    padding: 10%;
+    width: 150px;
+    height: 65px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+  }
+  
+  .cancelbtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .cancelbtn span:after {
+    content:'❌';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -40px;
+    transition: 0.5s;
+  }
+  
+  .cancelbtn:hover span {
+    padding-right: 35px;
+    color: red;
+  }
+  
+  .cancelbtn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .buttons{
+    border-radius: 4px;
+    background-color: #FFCC00;
+    border: none;
+    color: #0c0909;
+    font-size: 95%;
+    padding: 10%;
+    width: 150px;
+    height: 65px;
+    text-align: center;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+  } 
+  .buttons:hover{
+    color: rgb(249, 255, 255);
+  }
+  h1 {
+    font-weight: bold;
+    animation: gradientText 5s ease-in-out infinite;
+}
+@keyframes gradientText {
+    0% {
+        color: red;
+    }
+
+    25% {
+        color:white;
+    }
+
+    50% {
+        color: red(161, 27, 3);
+    }
+
+    100% {
+        color:white;
+    }
+}
